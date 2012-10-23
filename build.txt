@@ -1,3 +1,11 @@
+In order to build this project successfully the following libraries are required:
+ - Boost C++ Libraries
+ - OpenCV
+ - RapidXML
+
+Additionally the Threading Building Blocks (TBB) libarary needs to be downloaded for execution.
+
+
 The following describes the required environment variables to build the solution.
 The given values depict examples only.
 
