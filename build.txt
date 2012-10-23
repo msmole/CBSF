@@ -1,0 +1,22 @@
+The following describes the required environment variables to build the solution.
+The given values depict examples only.
+
+BOOST_DIR		C:\Apps\boost_1_49_0
+OPENCV_DIR		C:\Apps\opencv
+OPENCV_LIB_VERSION	231
+RAPIDXML_DIR		C:\Apps\rapidxml-1.13
+TBB_DIR			C:\Apps\tbb40_20120613oss
+
+DIR32			%OPENCV_DIR%\build\x86\vc10\bin;%TBB_DIR%\bin\ia32\vc10
+DIR64			%OPENCV_DIR%\build\x64\vc10\bin;%TBB_DIR%\bin\intel64\vc10
+PATH			%DIR64%;%DIR32%
+
+
+BOOST
+=====
+
+Build Boost library for 32 bit and copy %BOOST_DIR%\stage\lib to %BOOST_DIR%\lib\win32
+Command: bjam
+
+Build Boost library for 64 bit and copy %BOOST_DIR%\stage\lib to %BOOST_DIR%\lib\x64
+Command: bjam address-model=64

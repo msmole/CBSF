@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{6f189744-3542-4c99-bc78-a6f41440d6ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\bof">
+      <UniqueIdentifier>{bc2feb02-cfb8-4a42-9198-92a3866a2913}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\clustering">
+      <UniqueIdentifier>{f1306c34-8448-4a13-9ffc-a64acbc9a448}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core">
+      <UniqueIdentifier>{7dab97fa-ec3d-40e5-9038-7fba07ef102b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\loader">
+      <UniqueIdentifier>{4068af77-b00d-4cc8-8ba8-27c4dd7490b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\logging">
+      <UniqueIdentifier>{cf491cbd-781e-4570-8b17-c6a435cfc512}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\minhash">
+      <UniqueIdentifier>{219e1d76-b537-4540-9ac6-a61b00e8b73e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\tasks">
+      <UniqueIdentifier>{0c853b31-be6e-4981-9e94-b0b680d71b57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ui">
+      <UniqueIdentifier>{04cb2361-fb0d-4165-aa1c-df449b76b093}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BagOfFeatures.h">
+      <Filter>src\bof</Filter>
+    </ClInclude>
+    <ClInclude Include="InvertedFileSystem.h">
+      <Filter>src\bof</Filter>
+    </ClInclude>
+    <ClInclude Include="ClusterEngine.h">
+      <Filter>src\clustering</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageCluster.h">
+      <Filter>src\clustering</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractIndex.h">
+      <Filter>src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="VideoContext.h">
+      <Filter>src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="FileSystemUtility.h">
+      <Filter>src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="FSContext.h">
+      <Filter>src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="IContext.h">
+      <Filter>src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="IIndex.h">
+      <Filter>src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageData.h">
+      <Filter>src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="Property.h">
+      <Filter>src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="BasicFSImageLoader.h">
+      <Filter>src\loader</Filter>
+    </ClInclude>
+    <ClInclude Include="RandomImageLoader.h">
+      <Filter>src\loader</Filter>
+    </ClInclude>
+    <ClInclude Include="BasicScreenFrameExtractor.h">
+      <Filter>src\loader</Filter>
+    </ClInclude>
+    <ClInclude Include="ListImageLoader.h">
+      <Filter>src\loader</Filter>
+    </ClInclude>
+    <ClInclude Include="MinHashLoader.h">
+      <Filter>src\loader</Filter>
+    </ClInclude>
+    <ClInclude Include="Log.h">
+      <Filter>src\logging</Filter>
+    </ClInclude>
+    <ClInclude Include="HFGenDecorator.h">
+      <Filter>src\minhash</Filter>
+    </ClInclude>
+    <ClInclude Include="WeightedHistogramHFGenDecorator.h">
+      <Filter>src\minhash</Filter>
+    </ClInclude>
+    <ClInclude Include="IHashFunctionGenerator.h">
+      <Filter>src\minhash</Filter>
+    </ClInclude>
+    <ClInclude Include="IntShuffleGen.h">
+      <Filter>src\minhash</Filter>
+    </ClInclude>
+    <ClInclude Include="MinHashCore.h">
+      <Filter>src\minhash</Filter>
+    </ClInclude>
+    <ClInclude Include="MinHashIndex.h">
+      <Filter>src\minhash</Filter>
+    </ClInclude>
+    <ClInclude Include="MinHashUtility.h">
+      <Filter>src\minhash</Filter>
+    </ClInclude>
+    <ClInclude Include="RandomUniformGen.h">
+      <Filter>src\minhash</Filter>
+    </ClInclude>
+    <ClInclude Include="Repository.h">
+      <Filter>src\minhash</Filter>
+    </ClInclude>
+    <ClInclude Include="WeightedHFGenDecorator.h">
+      <Filter>src\minhash</Filter>
+    </ClInclude>
+    <ClInclude Include="TaskFactory.h">
+      <Filter>src\tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="CreateRandomImageListTask.h">
+      <Filter>src\tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="ITaskItem.h">
+      <Filter>src\tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="OxfordBuildingBofTask.h">
+      <Filter>src\tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="OxfordBuildingTask.h">
+      <Filter>src\tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="QueryTask.h">
+      <Filter>src\tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="RunEvaluationTask.h">
+      <Filter>src\tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageWindow.h">
+      <Filter>src\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="QueryImageWindow.h">
+      <Filter>src\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="Configuration.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="MinHashing.h">
+      <Filter>src\minhash</Filter>
+    </ClInclude>
+    <ClInclude Include="HistogramMinHashing.h">
+      <Filter>src\minhash</Filter>
+    </ClInclude>
+    <ClInclude Include="IImageLoader.h">
+      <Filter>src\loader</Filter>
+    </ClInclude>
+    <ClInclude Include="ComputeMinHashesTask.h">
+      <Filter>src\tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="ComputeVocabularyTask.h">
+      <Filter>src\tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="ComputeWeightsTask.h">
+      <Filter>src\tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="ClusteringTask.h">
+      <Filter>src\tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="ResultWindow.h">
+      <Filter>src\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="UKBenchScoreBofTask.h">
+      <Filter>src\tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="UKBenchScoreTask.h">
+      <Filter>src\tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyFrameExtractionTask.h">
+      <Filter>src\tasks</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="VideoContext.cpp">
+      <Filter>src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageData.cpp">
+      <Filter>src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="FSContext.cpp">
+      <Filter>src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="RandomImageLoader.cpp">
+      <Filter>src\loader</Filter>
+    </ClCompile>
+    <ClCompile Include="BasicFSImageLoader.cpp">
+      <Filter>src\loader</Filter>
+    </ClCompile>
+    <ClCompile Include="Log.cpp">
+      <Filter>src\logging</Filter>
+    </ClCompile>
+    <ClCompile Include="BasicScreenFrameExtractor.cpp">
+      <Filter>src\loader</Filter>
+    </ClCompile>
+    <ClCompile Include="MinHashLoader.cpp">
+      <Filter>src\loader</Filter>
+    </ClCompile>
+    <ClCompile Include="HFGenDecorator.cpp">
+      <Filter>src\minhash</Filter>
+    </ClCompile>
+    <ClCompile Include="RandomUniformGen.cpp">
+      <Filter>src\minhash</Filter>
+    </ClCompile>
+    <ClCompile Include="IntShuffleGen.cpp">
+      <Filter>src\minhash</Filter>
+    </ClCompile>
+    <ClCompile Include="WeightedHFGenDecorator.cpp">
+      <Filter>src\minhash</Filter>
+    </ClCompile>
+    <ClCompile Include="WeightedHistogramHFGenDecorator.cpp">
+      <Filter>src\minhash</Filter>
+    </ClCompile>
+    <ClCompile Include="Repository.cpp">
+      <Filter>src\minhash</Filter>
+    </ClCompile>
+    <ClCompile Include="FileSystemUtility.cpp">
+      <Filter>src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="ListImageLoader.cpp">
+      <Filter>src\loader</Filter>
+    </ClCompile>
+    <ClCompile Include="ClusterEngine.cpp">
+      <Filter>src\clustering</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageCluster.cpp">
+      <Filter>src\clustering</Filter>
+    </ClCompile>
+    <ClCompile Include="BagOfFeatures.cpp">
+      <Filter>src\bof</Filter>
+    </ClCompile>
+    <ClCompile Include="CreateRandomImageListTask.cpp">
+      <Filter>src\tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="RunEvaluationTask.cpp">
+      <Filter>src\tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="QueryTask.cpp">
+      <Filter>src\tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskFactory.cpp">
+      <Filter>src\tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="OxfordBuildingTask.cpp">
+      <Filter>src\tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="MinHashUtility.cpp">
+      <Filter>src\minhash</Filter>
+    </ClCompile>
+    <ClCompile Include="OxfordBuildingBofTask.cpp">
+      <Filter>src\tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageWindow.cpp">
+      <Filter>src\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="QueryImageWindow.cpp">
+      <Filter>src\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="InvertedFileSystem.cpp">
+      <Filter>src\bof</Filter>
+    </ClCompile>
+    <ClCompile Include="AbstractIndex.cpp">
+      <Filter>src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="MinHashIndex.cpp">
+      <Filter>src\minhash</Filter>
+    </ClCompile>
+    <ClCompile Include="Configuration.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="HistogramMinHashing.cpp">
+      <Filter>src\minhash</Filter>
+    </ClCompile>
+    <ClCompile Include="ComputeMinHashesTask.cpp">
+      <Filter>src\tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="ComputeVocabularyTask.cpp">
+      <Filter>src\tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="ComputeWeightsTask.cpp">
+      <Filter>src\tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="ClusteringTask.cpp">
+      <Filter>src\tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="ResultWindow.cpp">
+      <Filter>src\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="UKBenchScoreBofTask.cpp">
+      <Filter>src\tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="UKBenchScoreTask.cpp">
+      <Filter>src\tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyFrameExtractionTask.cpp">
+      <Filter>src\tasks</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

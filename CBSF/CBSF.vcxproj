@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{028F2C83-635E-42B6-B959-BAF1A7B32A2E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>CBSF</RootNamespace>
+    <ProjectName>CBSF</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(OPENCV_DIR)\build\include;$(RAPIDXML_DIR);$(BOOST_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(OPENCV_DIR)\build\x86\vc10\lib;$(BOOST_DIR)\lib\win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opencv_core$(OPENCV_LIB_VERSION)d.lib;opencv_imgproc$(OPENCV_LIB_VERSION)d.lib;opencv_highgui$(OPENCV_LIB_VERSION)d.lib;opencv_ml$(OPENCV_LIB_VERSION)d.lib;opencv_video$(OPENCV_LIB_VERSION)d.lib;opencv_features2d$(OPENCV_LIB_VERSION)d.lib;opencv_flann$(OPENCV_LIB_VERSION)d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(OPENCV_DIR)\build\include;$(RAPIDXML_DIR);$(BOOST_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(OPENCV_DIR)\build\x64\vc10\lib;$(BOOST_DIR)\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opencv_core$(OPENCV_LIB_VERSION)d.lib;opencv_imgproc$(OPENCV_LIB_VERSION)d.lib;opencv_highgui$(OPENCV_LIB_VERSION)d.lib;opencv_ml$(OPENCV_LIB_VERSION)d.lib;opencv_video$(OPENCV_LIB_VERSION)d.lib;opencv_features2d$(OPENCV_LIB_VERSION)d.lib;opencv_flann$(OPENCV_LIB_VERSION)d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(OPENCV_DIR)\build\include;$(RAPIDXML_DIR);$(BOOST_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(OPENCV_DIR)\build\x86\vc10\lib;$(BOOST_DIR)\lib\win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opencv_core$(OPENCV_LIB_VERSION).lib;opencv_imgproc$(OPENCV_LIB_VERSION).lib;opencv_highgui$(OPENCV_LIB_VERSION).lib;opencv_ml$(OPENCV_LIB_VERSION).lib;opencv_video$(OPENCV_LIB_VERSION).lib;opencv_features2d$(OPENCV_LIB_VERSION).lib;opencv_flann$(OPENCV_LIB_VERSION).lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(OPENCV_DIR)\build\include;$(RAPIDXML_DIR);$(BOOST_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(OPENCV_DIR)\build\x64\vc10\lib;$(BOOST_DIR)\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opencv_core$(OPENCV_LIB_VERSION).lib;opencv_imgproc$(OPENCV_LIB_VERSION).lib;opencv_highgui$(OPENCV_LIB_VERSION).lib;opencv_ml$(OPENCV_LIB_VERSION).lib;opencv_video$(OPENCV_LIB_VERSION).lib;opencv_features2d$(OPENCV_LIB_VERSION).lib;opencv_flann$(OPENCV_LIB_VERSION).lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="AbstractIndex.h" />
+    <ClInclude Include="ClusterEngine.h" />
+    <ClInclude Include="ClusteringTask.h" />
+    <ClInclude Include="ComputeMinHashesTask.h" />
+    <ClInclude Include="ComputeVocabularyTask.h" />
+    <ClInclude Include="ComputeWeightsTask.h" />
+    <ClInclude Include="CreateRandomImageListTask.h" />
+    <ClInclude Include="HFGenDecorator.h" />
+    <ClInclude Include="BasicFSImageLoader.h" />
+    <ClInclude Include="BasicScreenFrameExtractor.h" />
+    <ClInclude Include="BagOfFeatures.h" />
+    <ClInclude Include="FileSystemUtility.h" />
+    <ClInclude Include="FSContext.h" />
+    <ClInclude Include="HistogramMinHashing.h" />
+    <ClInclude Include="IContext.h" />
+    <ClInclude Include="IIndex.h" />
+    <ClInclude Include="IHashFunctionGenerator.h" />
+    <ClInclude Include="IImageLoader.h" />
+    <ClInclude Include="ImageCluster.h" />
+    <ClInclude Include="ImageData.h" />
+    <ClInclude Include="ImageWindow.h" />
+    <ClInclude Include="IntShuffleGen.h" />
+    <ClInclude Include="InvertedFileSystem.h" />
+    <ClInclude Include="ITaskItem.h" />
+    <ClInclude Include="KeyFrameExtractionTask.h" />
+    <ClInclude Include="ListImageLoader.h" />
+    <ClInclude Include="Log.h" />
+    <ClInclude Include="MinHashCore.h" />
+    <ClInclude Include="MinHashIndex.h" />
+    <ClInclude Include="MinHashing.h" />
+    <ClInclude Include="MinHashLoader.h" />
+    <ClInclude Include="MinHashUtility.h" />
+    <ClInclude Include="OxfordBuildingBofTask.h" />
+    <ClInclude Include="OxfordBuildingTask.h" />
+    <ClInclude Include="Property.h" />
+    <ClInclude Include="QueryImageWindow.h" />
+    <ClInclude Include="QueryTask.h" />
+    <ClInclude Include="RandomImageLoader.h" />
+    <ClInclude Include="RandomUniformGen.h" />
+    <ClInclude Include="Repository.h" />
+    <ClInclude Include="Configuration.h" />
+    <ClInclude Include="ResultWindow.h" />
+    <ClInclude Include="RunEvaluationTask.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TaskFactory.h" />
+    <ClInclude Include="UKBenchScoreBofTask.h" />
+    <ClInclude Include="UKBenchScoreTask.h" />
+    <ClInclude Include="VideoContext.h" />
+    <ClInclude Include="WeightedHFGenDecorator.h" />
+    <ClInclude Include="WeightedHistogramHFGenDecorator.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AbstractIndex.cpp" />
+    <ClCompile Include="BasicFSImageLoader.cpp" />
+    <ClCompile Include="BasicScreenFrameExtractor.cpp" />
+    <ClCompile Include="BagOfFeatures.cpp" />
+    <ClCompile Include="ClusterEngine.cpp" />
+    <ClCompile Include="ClusteringTask.cpp" />
+    <ClCompile Include="ComputeMinHashesTask.cpp" />
+    <ClCompile Include="ComputeVocabularyTask.cpp" />
+    <ClCompile Include="ComputeWeightsTask.cpp" />
+    <ClCompile Include="CreateRandomImageListTask.cpp" />
+    <ClCompile Include="FileSystemUtility.cpp" />
+    <ClCompile Include="FSContext.cpp" />
+    <ClCompile Include="HFGenDecorator.cpp" />
+    <ClCompile Include="HistogramMinHashing.cpp" />
+    <ClCompile Include="ImageCluster.cpp" />
+    <ClCompile Include="ImageData.cpp" />
+    <ClCompile Include="ImageWindow.cpp" />
+    <ClCompile Include="IntShuffleGen.cpp" />
+    <ClCompile Include="InvertedFileSystem.cpp" />
+    <ClCompile Include="KeyFrameExtractionTask.cpp" />
+    <ClCompile Include="ListImageLoader.cpp" />
+    <ClCompile Include="Log.cpp" />
+    <ClCompile Include="MinHashIndex.cpp" />
+    <ClCompile Include="MinHashLoader.cpp" />
+    <ClCompile Include="MinHashUtility.cpp" />
+    <ClCompile Include="OxfordBuildingBofTask.cpp" />
+    <ClCompile Include="OxfordBuildingTask.cpp" />
+    <ClCompile Include="QueryImageWindow.cpp" />
+    <ClCompile Include="QueryTask.cpp" />
+    <ClCompile Include="RandomImageLoader.cpp" />
+    <ClCompile Include="RandomUniformGen.cpp" />
+    <ClCompile Include="Repository.cpp" />
+    <ClCompile Include="Configuration.cpp" />
+    <ClCompile Include="ResultWindow.cpp" />
+    <ClCompile Include="RunEvaluationTask.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="TaskFactory.cpp" />
+    <ClCompile Include="UKBenchScoreBofTask.cpp" />
+    <ClCompile Include="UKBenchScoreTask.cpp" />
+    <ClCompile Include="VideoContext.cpp" />
+    <ClCompile Include="WeightedHFGenDecorator.cpp" />
+    <ClCompile Include="WeightedHistogramHFGenDecorator.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
